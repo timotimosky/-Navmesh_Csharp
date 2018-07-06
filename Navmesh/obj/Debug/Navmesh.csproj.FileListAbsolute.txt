@@ -1,0 +1,10 @@
+G:\code\projects\Navmesh\Navmesh\obj\Debug\Navmesh.csprojResolveAssemblyReference.cache
+G:\code\projects\Navmesh\Navmesh\bin\Debug\Navmesh.dll
+G:\code\projects\Navmesh\Navmesh\bin\Debug\Navmesh.pdb
+G:\code\projects\Navmesh\Navmesh\obj\Debug\Navmesh.dll
+G:\code\projects\Navmesh\Navmesh\obj\Debug\Navmesh.pdb
+G:\code\projects\Navmesh\Navmesh\bin\Debug\UnityEngine.dll
+H:\gitee\Navmesh_ms\Navmesh\bin\Debug\Navmesh.dll
+H:\gitee\Navmesh_ms\Navmesh\bin\Debug\Navmesh.pdb
+H:\gitee\Navmesh_ms\Navmesh\obj\Debug\Navmesh.dll
+H:\gitee\Navmesh_ms\Navmesh\obj\Debug\Navmesh.pdb

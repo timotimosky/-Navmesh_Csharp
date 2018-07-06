@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AEEE23AD-43CA-4E93-826E-483812E2DBC3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Navmesh</RootNamespace>
+    <AssemblyName>Navmesh</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\Nanoha_Network\Nanoha_Network\UnityEngine.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Detourcrowd\Crowd.cs" />
+    <Compile Include="Detourcrowd\CrowdAgent.cs" />
+    <Compile Include="Detourcrowd\CrowdAgentAnimation.cs" />
+    <Compile Include="Detourcrowd\CrowdAgentParams.cs" />
+    <Compile Include="Detourcrowd\debug\CrowdAgentDebugInfo.cs" />
+    <Compile Include="Detourcrowd\debug\ObstacleAvoidanceDebugData.cs" />
+    <Compile Include="Detourcrowd\LocalBoundary.cs" />
+    <Compile Include="Detourcrowd\ObstacleAvoidanceQuery.cs" />
+    <Compile Include="Detourcrowd\PathCorridor.cs" />
+    <Compile Include="Detourcrowd\PathQuery.cs" />
+    <Compile Include="Detourcrowd\PathQueue.cs" />
+    <Compile Include="Detourcrowd\ProximityGrid.cs" />
+    <Compile Include="Detourcrowd\SweepCircleCircleResult.cs" />
+    <Compile Include="Detour\BVNode.cs" />
+    <Compile Include="Detour\ClosesPointOnPolyResult.cs" />
+    <Compile Include="Detour\DetourBuilder.cs" />
+    <Compile Include="Detour\DetourCommon.cs" />
+    <Compile Include="Detour\FindDistanceToWallResult.cs" />
+    <Compile Include="Detour\FindLocalNeighbourhoodResult.cs" />
+    <Compile Include="Detour\FindNearestPolyResult.cs" />
+    <Compile Include="Detour\FindPathResult.cs" />
+    <Compile Include="Detour\FindPolysAroundResult.cs" />
+    <Compile Include="Detour\FindRandomPointResult.cs" />
+    <Compile Include="Detour\GetPolyWallSegmentsResult.cs" />
+    <Compile Include="Detour\Link.cs" />
+    <Compile Include="Detour\MeshData.cs" />
+    <Compile Include="Detour\MeshHeader.cs" />
+    <Compile Include="Detour\MeshTile.cs" />
+    <Compile Include="Detour\MoveAlongSurfaceResult.cs" />
+    <Compile Include="Detour\NavMesh.cs" />
+    <Compile Include="Detour\NavMeshBuilder.cs" />
+    <Compile Include="Detour\NavMeshCreateParams.cs" />
+    <Compile Include="Detour\NavMeshParams.cs" />
+    <Compile Include="Detour\NavMeshQuery.cs" />
+    <Compile Include="Detour\Node.cs" />
+    <Compile Include="Detour\NodePool.cs" />
+    <Compile Include="Detour\NodeQueue.cs" />
+    <Compile Include="Detour\OffMeshConnection.cs" />
+    <Compile Include="Detour\Poly.cs" />
+    <Compile Include="Detour\PolyDetail.cs" />
+    <Compile Include="Detour\QueryData.cs" />
+    <Compile Include="Detour\QueryFilter.cs" />
+    <Compile Include="Detour\RaycastHit.cs" />
+    <Compile Include="Detour\Status.cs" />
+    <Compile Include="Detour\StraightPathItem.cs" />
+    <Compile Include="Detour\tupple\BoolFloatFloatTupple3.cs" />
+    <Compile Include="Detour\tupple\BoolFloatTupple2.cs" />
+    <Compile Include="Detour\tupple\FloatFloatTupple2.cs" />
+    <Compile Include="Detour\tupple\IntObjectTupple2.cs" />
+    <Compile Include="Detour\tupple\Tupple2.cs" />
+    <Compile Include="Detour\tupple\Tupple3.cs" />
+    <Compile Include="Detour\UpdateSlicedPathResult.cs" />
+    <Compile Include="Detour\VectorPtr.cs" />
+    <Compile Include="help\Arrays.cs" />
+    <Compile Include="help\ByteBuffer.cs" />
+    <Compile Include="help\ByteOrder.cs" />
+    <Compile Include="help\PriorityQueue.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recast\ChunkyTriMesh.cs" />
+    <Compile Include="Recast\CompactCell.cs" />
+    <Compile Include="Recast\CompactHeightfield.cs" />
+    <Compile Include="Recast\CompactSpan.cs" />
+    <Compile Include="Recast\Context.cs" />
+    <Compile Include="Recast\Contour.cs" />
+    <Compile Include="Recast\ContourSet.cs" />
+    <Compile Include="Recast\ConvexVolume.cs" />
+    <Compile Include="Recast\Heightfield.cs" />
+    <Compile Include="Recast\HeightfieldLayerSet.cs" />
+    <Compile Include="Recast\InputGeom.cs" />
+    <Compile Include="Recast\PolyMesh.cs" />
+    <Compile Include="Recast\PolyMeshDetail.cs" />
+    <Compile Include="Recast\Recast.cs" />
+    <Compile Include="Recast\RecastArea.cs" />
+    <Compile Include="Recast\RecastBuilder.cs" />
+    <Compile Include="Recast\RecastBuilderConfig.cs" />
+    <Compile Include="Recast\RecastCommon.cs" />
+    <Compile Include="Recast\RecastConfig.cs" />
+    <Compile Include="Recast\RecastConstants.cs" />
+    <Compile Include="Recast\RecastContour.cs" />
+    <Compile Include="Recast\RecastFilter.cs" />
+    <Compile Include="Recast\RecastLayers.cs" />
+    <Compile Include="Recast\RecastMesh.cs" />
+    <Compile Include="Recast\RecastMeshDetail.cs" />
+    <Compile Include="Recast\RecastRasterization.cs" />
+    <Compile Include="Recast\RecastRegion.cs" />
+    <Compile Include="Recast\RecastVectors.cs" />
+    <Compile Include="Recast\Span.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Detour\io\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
